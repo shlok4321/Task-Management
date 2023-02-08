@@ -1,0 +1,82 @@
+.task {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid #eeecda;
+  border-radius: 0.25rem;
+}
+.task.collapsedTask .moveTask {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.5rem;
+}
+.task form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 0.25rem;
+}
+.task form .input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #eeecda;
+  text-align: center;
+  resize: none;
+  display: flex;
+  font-family: "Kanit", sans-serif;
+}
+.task form .input:hover {
+  cursor: pointer;
+  border: 1px solid #eeecda;
+}
+.task form .input:focus {
+  outline: none;
+  border-color: #edc988;
+  color: #edc988;
+}
+.task form .input::-moz-placeholder {
+  color: #eeecda;
+}
+.task form .input:-ms-input-placeholder {
+  color: #eeecda;
+}
+.task form .input::placeholder {
+  color: #eeecda;
+}
+.task form .title {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.task form .title:hover {
+  cursor: text;
+}
+.task form.collapsed {
+  flex-direction: row;
+  align-content: center;
+}
+.task form.collapsed .title {
+  margin: 0;
+}
+.task form.collapsed .title:hover {
+  border-color: transparent;
+  cursor: default;
+}
+
+.task form.collapsed label.selected {
+  display: inline-block;
+  font-weight: 500;
+}
+.task form.collapsed .button {
+  padding: 0.025rem 0.5rem;
+}
+.task form.collapsed .button.moveTask {
+  background-color: red;
+}
+.task form.collapsed:hover .button {
+  display: inline-block;
+} /*# sourceMappingURL=task.css.map */
